@@ -17,8 +17,8 @@ interface SubRedditPostPageProps {
   }
 }
 
-export const dynamic = 'force-dynamic'
-export const fetchCache = 'force-no-store'
+//export const dynamic = 'force-dynamic'
+export const revalidate = 20 // revalidate this segment every 60 seconds
 
 const SubRedditPostPage = async ({ params }: SubRedditPostPageProps) => {
   const cachedPost = (await redis.hgetall(

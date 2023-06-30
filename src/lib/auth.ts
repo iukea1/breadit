@@ -1,5 +1,5 @@
 
-
+export const runtime = 'edge' 
 import { db } from '@/lib/db'
 import { PrismaAdapter } from '@next-auth/prisma-adapter'
 import { nanoid } from 'nanoid'
