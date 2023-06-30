@@ -3,6 +3,9 @@ import { db } from '@/lib/db'
 import { UsernameValidator } from '@/lib/validators/username'
 import { z } from 'zod'
 
+
+
+
 export async function PATCH(req: Request) {
   try {
     const session = await getAuthSession()
