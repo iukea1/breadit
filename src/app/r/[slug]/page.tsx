@@ -30,6 +30,8 @@ const page = async ({ params }: PageProps) => {
           createdAt: 'desc'
         },
         take: INFINITE_SCROLL_PAGINATION_RESULTS,
+        //revalidate every 5 seconds for new posts and comments
+        
       },
     },
   })
@@ -48,3 +50,4 @@ const page = async ({ params }: PageProps) => {
 }
 
 export default page
+export const revalidate = 20 // revalidate this segment every 60 seconds
