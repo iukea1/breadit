@@ -20,6 +20,7 @@ export default async function SettingsPage() {
       <div className='grid items-start gap-8'>
         <h1 className='font-bold text-3xl md:text-4xl'>Settings</h1>
 
+
         <div className='grid gap-10'>
           <UserNameForm
             user={{
